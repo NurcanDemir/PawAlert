@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remove Found Pet</title>
+  <link rel="stylesheet" href="lost_found.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-wrapper {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-wrapper h1 {
+      text-align: center;
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    form input,
+    form select,
+    form textarea,
+    form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    form textarea {
+      resize: none;
+    }
+
+    form button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #45a049;
+    }
+
+    .navbar {
+      background-color: #4CAF50;
+      padding: 15px 30px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-links li a:hover {
+      color: #d4f1d4;
+    }
+
+    #footer-container {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    #footer-container p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <div class="navbar">
+    <a href="index.html" class="logo">🐾 PawAlert</a>
+    <ul class="nav-links">
+      <li><a href="news.html">News</a></li>
+      <li><a href="adopt.html">Adopt</a></li>
+      <li><a href="have_a_loss.html">Have a loss</a></li>
+      <li><a href="lost_found.html">Lost found</a></li>
+    </ul>
+  </div>
+
+  <div class="form-wrapper">
+    <h1>🐾 Remove Found Pet</h1>
+    <form action="submit_removal.php" method="POST">
+      <label for="finder-name">Your Full Name</label>
+      <input type="text" id="finder-name" name="finder_name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <label for="pet-name">Pet's Name (if known)</label>
+      <input type="text" id="pet-name" name="pet_name" placeholder="Enter the pet's name">
+
+      <label for="description">Pet Description or ID</label>
+      <textarea id="description" name="description" rows="3" placeholder="Provide a description or ID of the pet" required></textarea>
+
+      <label for="reason">Reason for Removal</label>
+      <select id="reason" name="reason" required>
+        <option value="">-- Select Reason --</option>
+        <option value="reunited">Reunited with Owner</option>
+        <option value="shelter">Taken to Shelter</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="additional-info">Additional Info (Optional)</label>
+      <textarea id="additional-info" name="additional_info" rows="2" placeholder="Provide any additional information"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="footer-container">
+    <p>&copy; 2025 PawAlert. All rights reserved.</p>
+  </div>
+</body>
+</html>

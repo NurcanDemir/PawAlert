@@ -1,0 +1,105 @@
+
+/* Genel Sayfa Stili */
+/* Navbar */
+.navbar {
+    background-color: #A8C686 ;
+    padding: 15px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #cbd5e1;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Açık gri arka plan */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* News Card Stil */
+.news-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* News Card Hover Efekti */
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Başlık Rengi ve Stili */
+.news-card h3 {
+    color: #388e3c; /* Koyu yeşil başlık rengi */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Paragraf Stili */
+.news-card p {
+    color: #555; /* Daha yumuşak metin rengi */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Emoji için küçük ayar */
+.news-card h3 {
+    font-size: 26px; /* Emoji için biraz daha büyük başlık */
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .news-card {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .news-card h3 {
+        font-size: 20px; /* Mobilde başlık boyutunu küçült */
+    }
+
+    .news-card p {
+        font-size: 14px; /* Mobilde paragraf boyutunu küçült */
+    }
+}

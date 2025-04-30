@@ -1,0 +1,208 @@
+/* Navbar */
+.navbar {
+    background-color: #A8C686 ;
+    padding: 15px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #cbd5e1;
+}
+
+/* Genel Sayfa Stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    padding-top: 80px; /* Navbar sabit olduğu için üst boşluk bırakıldı */
+}
+
+/* Adopt Bölümü */
+.adopt {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.adopt h2 {
+    font-size: 36px;
+    color: #388e3c;
+    margin-bottom: 30px;
+}
+
+/* Adopt Neden Başlık */
+.adopt-info h3 {
+    font-size: 28px;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+/* Adopt Neden Açıklaması */
+.adopt-info p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+/* Testimonial Bölümü */
+.testimonial-section {
+    margin-top: 50px;
+}
+
+/* Testimonial Kartları */
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.testimonial-info h4 {
+    font-size: 24px;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+/* Çağrı Yapılacak Alan */
+.call-to-action {
+    margin-top: 50px;
+    background-color: #388e3c;
+    color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.call-to-action h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-adopt {
+    background-color: #ffffff;
+    color: #388e3c;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-adopt:hover {
+    background-color: #388e3c;
+    color: #ffffff;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .testimonial-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .testimonial-info h4 {
+        font-size: 20px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+    }
+
+    .testimonial-author {
+        font-size: 12px;
+    }
+
+    .call-to-action h3 {
+        font-size: 24px;
+    }
+
+    .call-to-action p {
+        font-size: 14px;
+    }
+}

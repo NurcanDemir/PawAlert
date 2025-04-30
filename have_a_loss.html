@@ -1,0 +1,122 @@
+<section class="lost-section">
+  <link rel="stylesheet" href="have_a_loss.css">
+  <!-- Navigasyon Menüsü -->
+<div class="navbar">
+  
+  <a href="index.html" class="logo">🐾 PawAlert</a>
+  <ul class="nav-links">
+    <li><a href="news.html">News</a></li>
+    <li><a href="adopt.html">Adopt</a></li>
+    <li><a href="have_a_loss.html">Have a loss</a></li>
+    <li><a href="lost_found.html">Lost found</a></li>
+  </ul>
+</div>
+  
+
+  <h2>Have a Lost Pet or Person? Report Here!</h2>
+
+  <div class="lost-info">
+      <p>If you've lost a pet or person, you can post a report here. This platform helps you connect with a community that might have spotted your loved ones or can assist in the search efforts. Below you’ll find recently reported lost cases. If you have information about a missing individual or animal, please contact the person listed in the report.</p>
+  </div>
+
+  <div class="lost-report">
+      <h3>Recent Lost Reports</h3>
+
+      <div class="lost-card">
+          <img src="resim/havea-lost 1.jpg" alt="Milo the Dog" class="lost-image">
+          <div class="lost-info">
+              <h4>Milo - Lost Golden Retriever</h4>
+              <p><strong>Location:</strong> Westside Park</p>
+              <p><strong>Last Seen:</strong> April 25, 2025</p>
+              <p><strong>Status:</strong> Missing</p>
+              <p class="lost-description">
+                  Milo was last seen playing in Westside Park. He ran off after a loud noise from construction work nearby. His owner is offering a reward for any information leading to his return.
+              </p>
+              <p><strong>Contact:</strong> Jane Doe - (123) 456-7890</p>
+              <p class="lost-update"><strong>Update:</strong> Milo has not been found yet. Search efforts are ongoing.</p>
+          </div>
+      </div>
+
+      <div class="lost-card">
+          <img src="resim/havea-lost2.jpg" alt="Luna the Cat" class="lost-image">
+          <div class="lost-info">
+              <h4>Luna - Lost Black Cat</h4>
+              <p><strong>Location:</strong> Downtown Area</p>
+              <p><strong>Last Seen:</strong> April 20, 2025</p>
+              <p><strong>Status:</strong> Missing</p>
+              <p class="lost-description">
+                  Luna, a shy black cat, went missing from her home near Downtown. She may be hiding in the neighborhood. Her family is asking for any help in locating her.
+              </p>
+              <p><strong>Contact:</strong> John Smith - (987) 654-3210</p>
+              <p class="lost-update"><strong>Update:</strong> No new updates at this time. Please keep an eye out in the downtown area.</p>
+          </div>
+      </div>
+
+      <div class="lost-card">
+          <img src="resim/havea-lost3.jpg" alt="Max - Missing Person" class="lost-image">
+          <div class="lost-info">
+              <h4>Max - Missing Person</h4>
+              <p><strong>Location:</strong> River District</p>
+              <p><strong>Last Seen:</strong> April 22, 2025</p>
+              <p><strong>Status:</strong> Missing</p>
+              <p class="lost-description">
+                  Max, a local resident, went missing during a visit to the River District. His family is worried, and the authorities are actively investigating his disappearance.
+              </p>
+              <p><strong>Contact:</strong> Sarah Lee - (555) 123-4567</p>
+              <p class="lost-update"><strong>Update:</strong> Max's family has not received any new leads. If you have information, please reach out.</p>
+          </div>
+      </div>
+
+      <div class="lost-card">
+          <img src="resim/havea-lost4.jpg" alt="Fluffy - Lost Dog" class="lost-image">
+          <div class="lost-info">
+              <h4>Fluffy - Lost Poodle</h4>
+              <p><strong>Location:</strong> East End</p>
+              <p><strong>Last Seen:</strong> April 18, 2025</p>
+              <p><strong>Status:</strong> Found</p>
+              <p class="lost-description">
+                  Fluffy, a small white poodle, was found wandering the streets of the East End. Thanks to a kind passerby, Fluffy is now safely back with her owner.
+              </p>
+              <p><strong>Contact:</strong> Emma Brown - (321) 654-9870</p>
+              <p class="lost-update"><strong>Update:</strong> Fluffy has been reunited with her family. Thank you to everyone who helped!</p>
+          </div>
+      </div>
+
+      <!-- Yeni Kayıp Kartları Eklenebilir -->
+  </div>
+
+  <div class="report-lost">
+      <h3>Report Your Lost Pet or Person</h3>
+      <p>If you have lost a pet or person, please use the form below to submit a report. You can also upload a photo and provide any relevant details to help others assist in the search.</p>
+      <form action="/submit-lost-report" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required>
+
+          <label for="last-seen">Last Seen (Date):</label>
+          <input type="date" id="last-seen" name="last-seen" required>
+
+          <label for="status">Status:</label>
+          <select id="status" name="status" required>
+              <option value="missing">Missing</option>
+              <option value="found">Found</option>
+          </select>
+
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+
+          <label for="contact">Contact Information:</label>
+          <input type="text" id="contact" name="contact" required>
+
+          <label for="photo">Upload Photo:</label>
+          <input type="file" id="photo" name="photo">
+
+          <button type="submit">Submit Report</button>
+      </form>
+  </div>
+</section>
+<script src="footer.js"></script>
+
+

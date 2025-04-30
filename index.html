@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PawAlert</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <!-- Navigasyon Menüsü -->
+  <div class="navbar">
+    <a href="index.html" class="logo">🐾 PawAlert</a>
+    <ul class="nav-links">
+      <li><a href="news.html">News</a></li>
+      <li><a href="adopt.html">Adopt</a></li>
+      <li><a href="have_a_loss.html">Have a loss</a></li>
+      <li><a href="lost_found.html">Lost found</a></li>
+    </ul>
+  </div>
+  
+  <!-- Kaybolan Hayvan İlanı Formu -->
+  <div class="floating-lost-ad">
+    <h2>Create lost ad</h2>
+    <form action="insert_lost_pet.php" method="POST" onsubmit="return validateForm();">
+      <label for="name">Pet Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="type">Animal Type:</label>
+      <select id="type" name="type" required>
+        <option value="">-- Select Animal Type --</option>
+        <option value="Bird">Bird</option>
+        <option value="Cat">Cat</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Cow">Cow</option>
+        <option value="Dog">Dog</option>
+        <option value="Donkey">Donkey</option>
+        <option value="Duck">Duck</option>
+        <option value="Ferret">Ferret</option>
+        <option value="Goat">Goat</option>
+        <option value="Guinea Pig">Guinea Pig</option>
+        <option value="Hamster">Hamster</option>
+        <option value="Horse">Horse</option>
+        <option value="Parrot">Parrot</option>
+        <option value="Pigeon">Pigeon</option>
+        <option value="Rabbit">Rabbit</option>
+        <option value="Sheep">Sheep</option>
+        <option value="Turtle">Turtle</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Other">Other</option>
+      </select>
+  
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+  
+      <label for="date">Date Lost:</label>
+      <input type="date" id="date" name="date" required>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+  <!-- Diğer içerikler -->
+  <section class="hero">
+    <h1>🐾 <span class="highlight">LOST PAWS</span> 🐾</h1>
+    <div class="filters">
+      <select>
+        <option>--Choose a City--</option>
+        <option>Istanbul</option>
+        <option>Ankara</option>
+        <option>Izmir</option>
+      </select>
+      <select>
+        <option>All</option>
+        <option>Cat</option>
+        <option>Dog</option>
+        <option>Bird</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="card-grid">
+    <div class="card">
+      <img src="resim/cats.jpg" alt="Lokum">
+      <h3>Lokum</h3>
+      <p>ISTANBUL / Sultanbeyli</p>
+      <span>26.03.2025</span>
+    </div>
+    <div class="card">
+      <img src="resim/cat1.jpg" alt="Behzat">
+      <h3>Behzat</h3>
+      <p>KONYA / Selçuklu</p>
+      <span>15.03.2025</span>
+    </div>
+    <div class="card">
+      <img src="resim/cat2.jpg" alt="Zeytin">
+      <h3>Zeytin</h3>
+      <p>ISTANBUL / Silivri</p>
+      <span>01.01.2023</span>
+    </div>
+    <div class="card">
+      <img src="resim/cat3.jpg" alt="Pasha">
+      <h3>Pasha</h3>
+      <p>ISTANBUL / Bagcilar</p>
+      <span>03.04.2025</span>
+    </div>
+    <div class="card">
+      <img src="resim/cat4.jpg" alt="Vito">
+      <h3>Vito</h3>
+      <p>CANAKKALE / Guzelyali</p>
+      <span>04.04.2025</span>
+    </div>
+  </section>
+  
+  <section class="info-section">
+    <h2>Informative Articles For Our Animal Friends</h2>
+  
+    <div class="info-box">
+      <h3>🐱 Common Misconceptions About Cats</h3>
+      <p>
+        - Cats don't just drink milk, milk can cause diarrhea in some cats.<br>
+        - Cats do not like to live alone, they want attention and play.<br>
+        - Not every meow is hunger, sometimes they just talk.
+      </p>
+    </div>
+  
+    <div class="info-box">
+      <h3>🍗 What Should Stray Animals Eat?</h3>
+      <p>
+        - The most suitable food for stray cats and dogs is kibble and boiled food.<br>
+        - Raw bones, fatty foods, chocolate, etc., are harmful.<br>
+        - Each animal should be given separate food. (Cat food should not be given to dogs!)
+      </p>
+    </div>
+  
+    <div class="info-box">
+      <h3>🤝 How Can We Help Stray Animals?</h3>
+      <p>
+        - In winter, leave water containers in a way that they won't freeze.<br>
+        - In summer, place water containers in shaded areas.<br>
+        - Collaborate with municipalities to create feeding stations.<br>
+        - Love them, don't scare or harm them.
+      </p>
+    </div>
+  </section>
+  <div id="footer-container"></div>
+</body>
+<script src="footer.js"></script>
+</html>
